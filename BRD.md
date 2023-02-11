@@ -150,6 +150,9 @@ The success of the English-English dictionary powered by ChatGPT will be determi
 An English-English dictionary powered by ChatGPT has the potential to revolutionize the way people learn and use English, providing a wealth of functions beyond those of a traditional dictionary. By meeting the functional and non-functional requirements, assumptions, and constraints outlined in this paper, the dictionary can provide accurate, reliable, and personalized definitions and explanations that will benefit learners, educators, and professionals alike.
 
 
+## Summary the BRD to less than 140 words
+The English-English dictionary powered by ChatGPT is an online tool that provides accurate and reliable definitions and explanations for English words and phrases. It should be accessible via a website or mobile app, have a user-friendly interface, and be available 24/7. The dictionary should provide real-time definitions for conversational contexts, personalized recommendations for related words, and insights into usage frequency and popularity over time. The development team should ensure that the dictionary complies with ethical standards and avoids perpetuating biases or stereotypes. The success of the dictionary will be determined by the ability of users to easily find accurate and reliable definitions and explanations and receive positive feedback.
+
 ## Great job. 
 
 Thank you! I'm glad I could help. Let me know if you have any other questions or if there's anything else I can assist you with.
