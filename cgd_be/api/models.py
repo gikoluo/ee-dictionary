@@ -1,12 +1,26 @@
 from django.db import models
 
-# Create your models here.
-
 class Word(models.Model):
-    word = models.CharField(max_length=50)
+    WORD_TYPES = (
+        ('noun', 'Noun'),
+        ('verb', 'Verb'),
+        ('adjective', 'Adjective'),
+        ('adverb', 'Adverb'),
+        ('preposition', 'Preposition'),
+        ('conjunction', 'Conjunction'),
+        ('interjection', 'Interjection'),
+    )
+
+    word = models.CharField(max_length=255)
     definition = models.TextField()
-    usage = models.TextField()
-    origin = models.CharField(max_length=50)
+    language = models.CharField(max_length=255)
+    part_of_speech = models.CharField(max_length=20, choices=WORD_TYPES)
+    usage = models.TextField(blank=True)
+    origin = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return self.word
+
 
 class User(models.Model):
     username = models.CharField(max_length=50)

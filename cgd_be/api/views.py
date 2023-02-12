@@ -1,9 +1,12 @@
-from django.shortcuts import render
+# api/views.py
 
-from django.http import JsonResponse
-from api.models import Word
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from .models import Word
+from .serializers import WordSerializer
 
-def word_list(request):
-    words = Word.objects.all()
-    word_list = [{'word': word.word, 'definition': word.definition, 'usage': word.usage, 'origin': word.origin} for word in words]
-    return JsonResponse(word_list, safe=False)
+class WordList(APIView):
+    def get(self, request, format=None):
+        words = Word.objects.all()
+        serializer = WordSerializer(words, many=True)
+        return Response(serializer.data)
